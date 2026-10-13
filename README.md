@@ -34,7 +34,26 @@ Sinh viên, học sinh và những người quan tâm đến hoạt động tìn
 - `lienhe.html`: Biểu mẫu đăng ký và liên hệ.
 
 ## 6. Thành viên và phân công
-Bổ sung họ tên, username GitHub, vai trò và nhiệm vụ thực tế của từng thành viên tại đây.
+6.1. 
+Họ và tên: Lò Đức Hải
+Tài khoản: haild.k66sptin@utb.edu.vn
+Vai trò: Trưởng nhóm, coder
+Nhiệm vụ: Chia nhiệm vụ cho các thành viên trong nhóm, tạo repository Public, thêm các thành viên, đặt tên cho dự án (Gửi Ấm Lên Non),viết README.md , làm phần “Trang chủ” :Giới thiệu chiến dịch, hoàn cảnh, mục tiêu, slogan và nút kêu gọi hành động. Có ảnh lớn, mục tiêu nổi bật và các phần dẫn đến trang khác.
+6.2.
+Họ và tên: Nguyễn Khánh Linh
+Tài khoản: linhnk.k66sptin@utb.edu.vn
+Vai trò: Navigator 
+Nhiệm vụ: Làm phần “Liên hệ”, viết README.md và CONTRIBUTTIONS.md, tạo lập, quản lý trang facebook, youtube của dự án.
+6.3.
+ Họ và tên: Bùi Hoàng Hiệp
+Tài khoản: hiepbh.k66sptin@utb.edu.vn
+Vai trò: Reporter
+Nhiệm vụ: Làm phần “ Hướng dẫn quyên góp” :Trình bày quyên góp hiện vật, cách đóng gói, thời gian và địa điểm nhận. Có danh sách được nhận/không nhận, các bước hướng dẫn và lưu ý. Chủ yếu là HTML, CSS và Bootstrap Card/Alert.
+6.4.
+Họ và tên: Tao Văn Đạt
+Tài khoản: dattv.k66sptin@utb.edu.vn
+Vai trò: Tester
+Nhiệm vụ: Làm phần “Lịch trình chiến dịch” : Trình bày ba giai đoạn: tiếp nhận, phân loại–đóng gói, trao tặng–tổng kết; mốc thời gian, nhiệm vụ và người phụ trách. Có thể dùng timeline hoặc Bootstrap Cards. Ghi ngày tháng là dự kiến khi chưa có lịch chính thức.
 
 ## 7. Tiến độ
 Dự án được phát triển theo các giai đoạn: lên ý tưởng, xây dựng HTML, thiết kế giao diện, phát triển tương tác và kiểm thử hoàn thiện.
