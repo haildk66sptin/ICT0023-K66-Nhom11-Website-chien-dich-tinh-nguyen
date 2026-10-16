@@ -1,545 +1,419 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Liên hệ và đăng ký tình nguyện viên cho dự án Gửi Ấm Lên Non.">
-
-    <title>Liên hệ & Đăng ký tình nguyện viên | Gửi Ấm Lên Non</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="lienhe.css">
 </head>
-
 <body>
 
-    <header class="site-header">
-        <a class="brand" href="#top">
-            <span class="brand-icon">💚</span>
-            <span>GỬI ẤM LÊN NON</span>
-        </a>
+<nav class="thanhnav" aria-label="Điều hướng chính">
+    <button
+        class="nutmenu"
+        id="nutmenu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-chinh"
+    >
+        ☰ Menu
+    </button>
 
-        <nav aria-label="Điều hướng chính">
-            <a href="#lien-he">Liên hệ</a>
-            <a href="#dang-ky">Đăng ký tình nguyện viên</a>
-        </nav>
-    </header>
+    <ul id="menu-chinh">
+        <li><a href="index.html" aria-current="page">Trang chủ</a></li>
+        <li><a href="huongdan.html">Hướng dẫn</a></li>
+        <li><a href="lichtrinh.html">Lịch trình</a></li>
+        <li><a href="congcu.html">Công cụ</a></li>
+        <li><a href="lienhe.html">Liên hệ</a></li>
+    </ul>
+</nav>
 
-    <main id="top">
+<header>
+  <p>CHIẾN DỊCH TÌNH NGUYỆN</p>
+  <h1>Gửi Ấm Lên Non</h1>
+  <p>Gửi ấm lên non, gửi trọn yêu thương.</p>
+</header>
+<main class="tranglienhe">
 
-        <section class="hero">
-            <div class="hero-content">
-                <span class="eyebrow">
-                    CHUNG TAY LAN TỎA YÊU THƯƠNG
-                </span>
+    <!-- 1. THONG TIN LIEN HE -->
+    <section class="khunglienhe" id="thongtinlienhe">
+        <h2>1. Thông tin liên hệ nhóm</h2>
 
-                <h1>
-                    Liên hệ &amp; Đăng ký<br>
-                    <span>tình nguyện viên</span>
-                </h1>
+        <p>
+            Mọi thắc mắc về chiến dịch Gửi Ấm Lên Non,
+            vui lòng liên hệ với Ban Tổ chức qua các kênh sau.
+        </p>
 
-                <p>
-                    Mỗi sự đóng góp của bạn đều có thể mang đến
-                    một mùa đông ấm áp hơn cho các em nhỏ.
-                    Hãy đồng hành cùng Gửi Ấm Lên Non!
-                </p>
-
-                <a class="hero-button" href="#dang-ky">
-                    Tham gia cùng chúng mình
-                    <span aria-hidden="true">↓</span>
-                </a>
-            </div>
-
-            <div class="hero-art" aria-hidden="true">
-                <div class="sun"></div>
-                <div class="mountain mountain-back"></div>
-                <div class="mountain mountain-front"></div>
-                <div class="heart">♥</div>
-
-                <div class="art-caption">
-                    Trao hơi ấm<br>
-                    Gửi yêu thương
+        <div class="danhsachlienhe">
+            <div class="thethongtin">
+                <span class="bieutuong">🌐</span>
+                <div>
+                    <h3>Fanpage chính thức</h3>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        Truy cập Fanpage
+                    </a>
                 </div>
             </div>
-        </section>
 
-        <section class="contact-section section-wrap" id="lien-he">
-
-            <div class="section-heading">
-                <span class="section-tag">
-                    KẾT NỐI VỚI CHÚNG MÌNH
-                </span>
-
-                <h2>Thông tin liên hệ</h2>
-
-                <p>
-                    Mọi câu hỏi hoặc mong muốn đồng hành đều được
-                    chào đón. Hãy liên hệ với Ban Tổ chức nhé!
-                </p>
+            <div class="thethongtin">
+                <span class="bieutuong">✉️</span>
+                <div>
+                    <h3>Email</h3>
+                    <a href="mailto:aoamchoem.dhtb@gmail.com">
+                        aoamchoem.dhtb@gmail.com
+                    </a>
+                </div>
             </div>
 
-            <div class="contact-grid">
-
-                <!-- FANPAGE -->
-                <article class="contact-card">
-                    <div class="contact-icon" aria-hidden="true">
-                        📣
-                    </div>
-
-                    <div>
-                        <h3>Fanpage chính thức</h3>
-
-                        <p>
-                            Theo dõi hoạt động và cập nhật mới nhất.
-                        </p>
-
-                        <a
-                            href="https://www.facebook.com/share/18aHdmJxbi/"
-                            rel="noopener noreferrer"
-                        >
-                            Theo dõi Fanpage
-                            <span aria-hidden="true">↗</span>
-                        </a>
-                    </div>
-                </article>
-
-                <!-- EMAIL -->
-                <article class="contact-card">
-                    <div class="contact-icon" aria-hidden="true">
-                        📧
-                    </div>
-
-                    <div>
-                        <h3>Email</h3>
-
-                        <p>
-                            Gửi lời nhắn hoặc thắc mắc cho nhóm.
-                        </p>
-
-                        <a href="mailto:Nguyenvana@gmail.com">
-                            Nguyenvana@gmail.com
-                        </a>
-                    </div>
-                </article>
-
-                <!-- HOTLINE -->
-                <article class="contact-card">
-                    <div class="contact-icon" aria-hidden="true">
-                        📱
-                    </div>
-
-                    <div>
-                        <h3>Hotline Trưởng BTC</h3>
-
-                        <p>
-                            Nhóm 11 · Trưởng Ban Tổ chức
-                        </p>
-
-                        <a href="tel:0123456789">
-                            0123456789
-                        </a>
-                    </div>
-                </article>
-
+            <div class="thethongtin">
+                <span class="bieutuong">☎️</span>
+                <div>
+                    <h3>Hotline Trưởng BTC</h3>
+                    <p>09xx.xxx.xxx — [Tên Trưởng BTC]</p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="registration-section section-wrap" id="dang-ky">
 
-            <div class="section-heading">
-                <span class="section-tag">
-                    MỘT CHÚT THÔNG TIN TỪ BẠN
-                </span>
+    <!-- 2. FORM DANG KY TINH NGUYEN VIEN -->
+    <section class="khunglienhe" id="dangkytnv">
+        <h2>2. Đăng ký tình nguyện viên</h2>
 
-                <h2>
-                    Đăng ký trở thành tình nguyện viên
-                </h2>
+        <p>
+            Hãy điền đầy đủ thông tin để Ban Tổ chức có thể
+            liên hệ và sắp xếp công việc phù hợp.
+        </p>
 
-                <p>
-                    Vui lòng điền thông tin bên dưới để nhóm có thể
-                    liên hệ và sắp xếp vị trí phù hợp với bạn.
-                    Các mục có dấu
-                    <span class="required">*</span>
-                    là bắt buộc.
-                </p>
-            </div>
+        <form id="formtnv">
 
-            <form class="volunteer-form" action="#" method="post">
+            <!-- PHAN 1 -->
+            <fieldset class="phanform">
+                <legend>Phần 1. Thông tin cơ bản</legend>
 
-                <fieldset>
-                    <legend>👤 1. Thông tin cá nhân</legend>
+                <div class="luoiform">
 
-                    <div class="form-grid">
-
-                        <div class="form-group">
-                            <label for="fullname">
-                                Họ và tên
-                                <span class="required">*</span>
-                            </label>
-
-                            <input
-                                type="text"
-                                id="fullname"
-                                name="fullname"
-                                placeholder="Nhập họ và tên"
-                                autocomplete="name"
-                                required
-                            >
-                        </div>
-
-                        <div class="form-group">
-                            <label for="birthday">
-                                Ngày sinh
-                                <span class="required">*</span>
-                            </label>
-
-                            <input
-                                type="date"
-                                id="birthday"
-                                name="birthday"
-                                required
-                            >
-                        </div>
-
-                        <div class="form-group">
-                            <label for="studentId">
-                                Mã số sinh viên
-                                <span class="required">*</span>
-                            </label>
-
-                            <input
-                                type="text"
-                                id="studentId"
-                                name="studentId"
-                                placeholder="Nhập MSSV"
-                                required
-                            >
-                        </div>
-
-                        <div class="form-group">
-                            <label for="className">
-                                Lớp / Khoa
-                                <span class="required">*</span>
-                            </label>
-
-                            <input
-                                type="text"
-                                id="className"
-                                name="className"
-                                placeholder="Ví dụ: Khoa Công nghệ thông tin"
-                                required
-                            >
-                        </div>
-
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>📱 2. Thông tin liên lạc</legend>
-
-                    <div class="form-grid">
-
-                        <div class="form-group">
-                            <label for="phone">
-                                Số điện thoại
-                                <span class="required">*</span>
-                            </label>
-
-                            <input
-                                type="tel"
-                                id="phone"
-                                name="phone"
-                                placeholder="Nhập số điện thoại"
-                                pattern="0[0-9]{9}"
-                                title="Vui lòng nhập số điện thoại Việt Nam gồm 10 chữ số"
-                                autocomplete="tel"
-                                required
-                            >
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">
-                                Email
-                                <span class="required">*</span>
-                            </label>
-
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="example@gmail.com"
-                                autocomplete="email"
-                                required
-                            >
-                        </div>
-
-                        <div class="form-group full-width">
-                            <label for="facebook">
-                                Link Facebook cá nhân
-                            </label>
-
-                            <input
-                                type="url"
-                                id="facebook"
-                                name="facebook"
-                                placeholder="https://facebook.com/..."
-                            >
-                        </div>
-
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>
-                        🩺 3. Thông tin sức khỏe &amp; thể lực
-                    </legend>
-
-                    <div class="form-group">
-                        <label for="health">
-                            Tình trạng sức khỏe chung
-                            <span class="required">*</span>
-                        </label>
-
-                        <textarea
-                            id="health"
-                            name="health"
-                            rows="3"
-                            placeholder="Cho biết các lưu ý cần thiết như say xe, dị ứng hoặc vấn đề cần hỗ trợ..."
+                    <div class="truongform">
+                        <label for="hoten">Họ và tên *</label>
+                        <input
+                            type="text"
+                            id="hoten"
+                            name="hoten"
+                            placeholder="Nhập họ và tên"
+                            autocomplete="name"
                             required
-                        ></textarea>
+                        >
                     </div>
 
-                    <div class="form-group">
-                        <span class="group-label">
-                            Đánh giá thể lực
-                            <span class="required">*</span>
-                        </span>
-
-                        <div class="option-list">
-
-                            <label class="option-item">
-                                <input
-                                    type="checkbox"
-                                    name="fitness"
-                                    value="Đi xa"
-                                    required
-                                >
-                                <span>Có thể đi xa</span>
-                            </label>
-
-                            <label class="option-item">
-                                <input
-                                    type="checkbox"
-                                    name="fitness"
-                                    value="Mang vác"
-                                >
-                                <span>Có thể hỗ trợ mang vác</span>
-                            </label>
-
-                            <label class="option-item">
-                                <input
-                                    type="checkbox"
-                                    name="fitness"
-                                    value="Chịu lạnh"
-                                >
-                                <span>
-                                    Có thể làm việc trong thời tiết lạnh
-                                </span>
-                            </label>
-
-                        </div>
-
-                        <small class="field-note">
-                            Chọn ít nhất một lựa chọn phù hợp với bạn.
-                        </small>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>
-                        🎯 4. Vị trí mong muốn ứng tuyển
-                    </legend>
-
-                    <p class="field-note">
-                        Bạn có thể chọn nhiều vị trí.
-                    </p>
-
-                    <div class="option-list">
-
-                        <label class="option-item">
-                            <input
-                                type="checkbox"
-                                name="position"
-                                value="Ban Nội dung - Sự kiện"
-                            >
-
-                            <span>
-                                <strong>Ban Nội dung - Sự kiện</strong>
-
-                                <small>
-                                    Lên ý tưởng, xây dựng nội dung
-                                    và tổ chức hoạt động.
-                                </small>
-                            </span>
-                        </label>
-
-                        <label class="option-item">
-                            <input
-                                type="checkbox"
-                                name="position"
-                                value="Ban Truyền thông"
-                            >
-
-                            <span>
-                                <strong>Ban Truyền thông</strong>
-
-                                <small>
-                                    Thiết kế, chụp ảnh, quay video
-                                    và viết bài.
-                                </small>
-                            </span>
-                        </label>
-
-                        <label class="option-item">
-                            <input
-                                type="checkbox"
-                                name="position"
-                                value="Ban Hậu cần - Đối ngoại"
-                            >
-
-                            <span>
-                                <strong>Ban Hậu cần - Đối ngoại</strong>
-
-                                <small>
-                                    Phân loại đồ, vận chuyển
-                                    và tiếp nhận quyên góp.
-                                </small>
-                            </span>
-                        </label>
-
-                    </div>
-                </fieldset>
-
-
-                <fieldset>
-                    <legend>
-                        🕒 5. Thời gian có thể tham gia
-                    </legend>
-
-                    <p class="field-note">
-                        Tích chọn các ca trực tại Nhà D mà bạn có thể
-                        tham gia. Nhóm sẽ cập nhật lịch cụ thể sau.
-                    </p>
-
-                    <div class="option-list option-list-inline">
-
-                        <label class="option-item">
-                            <input
-                                type="checkbox"
-                                name="shift"
-                                value="Ca sáng"
-                            >
-                            <span>Ca sáng</span>
-                        </label>
-
-                        <label class="option-item">
-                            <input
-                                type="checkbox"
-                                name="shift"
-                                value="Ca chiều"
-                            >
-                            <span>Ca chiều</span>
-                        </label>
-
-                        <label class="option-item">
-                            <input
-                                type="checkbox"
-                                name="shift"
-                                value="Ca tối"
-                            >
-                            <span>Ca tối</span>
-                        </label>
-
-                        <label class="option-item">
-                            <input
-                                type="checkbox"
-                                name="shift"
-                                value="Linh hoạt"
-                            >
-                            <span>Thời gian linh hoạt</span>
-                        </label>
-
+                    <div class="truongform">
+                        <label for="ngaysinh">Ngày sinh *</label>
+                        <input
+                            type="date"
+                            id="ngaysinh"
+                            name="ngaysinh"
+                            required
+                        >
                     </div>
 
-                    <div class="form-group note-field">
-                        <label for="note">Ghi chú thêm</label>
-
-                        <textarea
-                            id="note"
-                            name="note"
-                            rows="3"
-                            placeholder="Mong muốn, kinh nghiệm hoặc thời gian khác..."
-                        ></textarea>
+                    <div class="truongform">
+                        <label for="mssv">Mã số sinh viên *</label>
+                        <input
+                            type="text"
+                            id="mssv"
+                            name="mssv"
+                            placeholder="Nhập MSSV"
+                            required
+                        >
                     </div>
-                </fieldset>
 
-                <!-- XÁC NHẬN THÔNG TIN -->
-                <div class="privacy-note">
-                    <label class="option-item">
+                    <div class="truongform">
+                        <label for="lopkhoa">Lớp / Khoa *</label>
+                        <input
+                            type="text"
+                            id="lopkhoa"
+                            name="lopkhoa"
+                            placeholder="Ví dụ: K66 ĐHSP Tin"
+                            required
+                        >
+                    </div>
+
+                    <div class="truongform">
+                        <label for="sodienthoai">Số điện thoại *</label>
+                        <input
+                            type="tel"
+                            id="sodienthoai"
+                            name="sodienthoai"
+                            placeholder="Nhập số điện thoại"
+                            autocomplete="tel"
+                            required
+                        >
+                    </div>
+
+                    <div class="truongform">
+                        <label for="email">Email *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@gmail.com"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="truongform truongrong">
+                        <label for="facebook">Link Facebook cá nhân</label>
+                        <input
+                            type="url"
+                            id="facebook"
+                            name="facebook"
+                            placeholder="https://facebook.com/..."
+                        >
+                    </div>
+
+                </div>
+            </fieldset>
+
+
+            <!-- PHAN 2 -->
+            <fieldset class="phanform">
+                <legend>Phần 2. Sức khỏe và thể lực</legend>
+
+                <div class="truongform">
+                    <label for="suckhoe">
+                        Tình trạng sức khỏe chung *
+                    </label>
+
+                    <textarea
+                        id="suckhoe"
+                        name="suckhoe"
+                        rows="4"
+                        placeholder="Chia sẻ thông tin sức khỏe cần thiết để BTC hỗ trợ bạn an toàn khi tham gia."
+                        required
+                    ></textarea>
+
+                    <small>
+                        Chỉ cung cấp thông tin cần thiết cho việc tổ chức
+                        và bảo đảm an toàn khi tham gia.
+                    </small>
+                </div>
+
+                <div class="truongform">
+                    <label for="theluc">Khả năng thể lực *</label>
+
+                    <select id="theluc" name="theluc" required>
+                        <option value="">-- Chọn mức phù hợp --</option>
+                        <option value="tot">
+                            Có thể đi xa và hỗ trợ mang vác
+                        </option>
+                        <option value="trungbinh">
+                            Có thể tham gia hoạt động vừa sức
+                        </option>
+                        <option value="hanche">
+                            Cần bố trí công việc nhẹ hoặc phù hợp
+                        </option>
+                    </select>
+                </div>
+            </fieldset>
+
+
+            <!-- PHAN 3 -->
+            <fieldset class="phanform">
+                <legend>Phần 3. Vị trí mong muốn ứng tuyển</legend>
+
+                <p class="huongdanform">
+                    Có thể chọn nhiều ban phù hợp với sở thích và khả năng.
+                </p>
+
+                <div class="nhomluachon">
+                    <label class="luachon">
                         <input
                             type="checkbox"
-                            id="agree"
-                            name="agree"
-                            required
+                            name="banungtuyen"
+                            value="noidung"
                         >
-
                         <span>
-                            Tôi xác nhận thông tin đã cung cấp là chính xác
-                            và đồng ý để Ban Tổ chức sử dụng thông tin nhằm
-                            phục vụ việc tuyển chọn, sắp xếp và liên hệ
-                            tình nguyện viên.
-                            <span class="required">*</span>
+                            <strong>Ban Nội dung - Sự kiện</strong>
+                            <small>
+                                Lên ý tưởng, xây dựng nội dung và hỗ trợ
+                                tổ chức hoạt động.
+                            </small>
+                        </span>
+                    </label>
+
+                    <label class="luachon">
+                        <input
+                            type="checkbox"
+                            name="banungtuyen"
+                            value="truyenthong"
+                        >
+                        <span>
+                            <strong>Ban Truyền thông</strong>
+                            <small>
+                                Thiết kế, chụp ảnh, viết bài và cập nhật
+                                thông tin chiến dịch.
+                            </small>
+                        </span>
+                    </label>
+
+                    <label class="luachon">
+                        <input
+                            type="checkbox"
+                            name="banungtuyen"
+                            value="haucan"
+                        >
+                        <span>
+                            <strong>Ban Hậu cần - Đối ngoại</strong>
+                            <small>
+                                Phân loại đồ, tiếp nhận quyên góp và
+                                hỗ trợ vận chuyển vật phẩm.
+                            </small>
+                        </span>
+                    </label>
+                </div>
+            </fieldset>
+
+
+            <!-- PHAN 4 -->
+            <fieldset class="phanform">
+                <legend>Phần 4. Thời gian có thể tham gia</legend>
+
+                <p class="huongdanform">
+                    Tích chọn các ca trực tại Nhà D mà bạn có thể tham gia.
+                </p>
+
+                <div class="nhomluachon">
+                    <label class="luachon">
+                        <input
+                            type="checkbox"
+                            name="catruc"
+                            value="sang"
+                        >
+                        <span>
+                            <strong>Ca sáng</strong>
+                            <small>08:00 – 11:30</small>
+                        </span>
+                    </label>
+
+                    <label class="luachon">
+                        <input
+                            type="checkbox"
+                            name="catruc"
+                            value="chieu"
+                        >
+                        <span>
+                            <strong>Ca chiều</strong>
+                            <small>13:30 – 17:30</small>
                         </span>
                     </label>
                 </div>
 
-                <button type="submit" class="submit-btn">
-                    💚 Gửi đơn đăng ký
-                    <span aria-hidden="true">→</span>
-                </button>
+                <div class="truongform">
+                    <label for="ghichu">Nguyện vọng khác (nếu có)</label>
+                    <textarea
+                        id="ghichu"
+                        name="ghichu"
+                        rows="3"
+                        placeholder="Ví dụ: Có thể hỗ trợ thiết kế từ xa..."
+                    ></textarea>
+                </div>
+            </fieldset>
 
-                <p class="form-note">
-                    Bản giao diện mẫu: biểu mẫu hiện chưa kết nối
-                    hệ thống lưu hoặc gửi đơn đăng ký.
-                </p>
+            <p class="luuyform">
+                * Các trường bắt buộc cần được điền trước khi gửi đăng ký.
+                Đây là biểu mẫu minh họa của dự án học tập.
+            </p>
 
-            </form>
-        </section>
+            <button type="submit" class="nutgui">
+                Gửi đăng ký
+            </button>
 
-        <section class="closing-banner">
-            <span aria-hidden="true">🌿</span>
+            <p
+                id="thongbaotnv"
+                class="thongbaotnv"
+                role="status"
+                aria-live="polite"
+            ></p>
 
-            <div>
-                <h2>
-                    Một bàn tay nhỏ, một yêu thương lớn
-                </h2>
+        </form>
+    </section>
 
-                <p>
-                    Cảm ơn bạn đã sẵn sàng lan tỏa hơi ấm
-                    cùng Gửi Ấm Lên Non.
-                </p>
-            </div>
-        </section>
+<!-- THÀNH VIÊN NHÓM -->
+<section class="khunglienhe" id="thanhviennhom">
+    <div class="tieude-thanhvien">
+        <span class="nhan-muc">ĐỘI NGŨ TÌNH NGUYỆN</span>
+        <h2>THÀNH VIÊN NHÓM</h2>
+        <p>Những người cùng chung tay mang hơi ấm đến các em nhỏ vùng cao.</p>
+    </div>
 
-    </main>
+    <!-- Tìm kiếm và lọc thành viên -->
+    <div class="bo-loc-thanhvien">
+        <input
+            type="text"
+            id="timkiemthanhvien"
+            placeholder="🔍 Tìm theo tên thành viên..."
+            aria-label="Tìm theo tên thành viên"
+        >
 
-    <footer class="site-footer">
-        <p>
-            © Gửi Ấm Lên Non · Chung tay vì những mùa đông ấm áp hơn.
-        </p>
+        <select id="locvaitro" aria-label="Lọc theo vai trò">
+            <option value="all">Tất cả vai trò</option>
+            <option value="driver">Trưởng nhóm / Điều phối</option>
+            <option value="navigator">Thành viên nội dung</option>
+            <option value="tester">Thành viên hậu cần</option>
+            <option value="reporter">Thành viên truyền thông</option>
+        </select>
 
-        <a href="#top">Lên đầu trang ↑</a>
-    </footer>
+        <button type="button" id="nutbolocthanhvien">
+            Bỏ bộ lọc
+        </button>
+    </div>
 
+    <!-- JavaScript sẽ tự in các thẻ thành viên vào đây -->
+    <div id="danhsachthanhvien" class="luoithanhvien"></div>
+
+    <p id="thongbaothanhvien" class="thongbaothanhvien" aria-live="polite"></p>
+</section>
+
+<!-- MODAL CHI TIẾT THÀNH VIÊN -->
+<div class="nen-modal" id="modalthanhvien" aria-hidden="true">
+    <div
+        class="hopthoai-thanhvien"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="tenmodal"
+    >
+        <button
+            type="button"
+            class="dong-modal"
+            id="dongmodal"
+            aria-label="Đóng cửa sổ"
+        >×</button>
+
+        <div class="dau-modal">
+            <span>GỬI ẤM LÊN NON</span>
+            <h2>THÔNG TIN THÀNH VIÊN</h2>
+            <h3 id="tenmodal"></h3>
+        </div>
+
+        <div id="noidungmodal" class="noidungmodal"></div>
+    </div>
+</div>
+
+</main>
+
+<footer class="chantrang">
+  <div class="noidungchantrang">
+      <h2>Gửi Ấm Lên Non</h2>
+      <p class="slogan">Gửi ấm lên non, gửi trọn yêu thương.</p>
+  </div>
+
+  <div class="banquyen">
+      <p>© 2026 Gửi Ấm Lên Non · Dự án học tập của Nhóm 11</p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
