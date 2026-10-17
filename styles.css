@@ -1,0 +1,627 @@
+
+/* =========================
+   1. THIET LAP CHUNG
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #24435a;
+    line-height: 1.7;
+    background:
+        radial-gradient(circle at 10% 15%,
+            rgba(255, 225, 145, 0.25), transparent 25%),
+        radial-gradient(circle at 90% 35%,
+            rgba(104, 195, 235, 0.2), transparent 30%),
+        linear-gradient(135deg, #f4fbff, #eaf6f8, #fffdf5);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =========================
+   2. MENU DIEU HUONG
+========================= */
+
+.thanhnav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(31, 91, 119, 0.96);
+    padding: 10px 20px;
+    box-shadow: 0 3px 12px rgba(30, 75, 100, 0.15);
+}
+
+/* Menu tren may tinh */
+.thanhnav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.thanhnav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 7px 4px;
+}
+
+.thanhnav a:hover,
+.thanhnav a[aria-current="page"] {
+    color: #ffe39b;
+}
+
+/* An nut Menu tren may tinh */
+.nutmenu {
+    display: none;
+}
+
+/* Menu tren dien thoai */
+@media (max-width: 700px) {
+    .thanhnav {
+        padding: 10px 14px;
+    }
+
+    .nutmenu {
+        display: block;
+        margin: 0 auto;
+        padding: 9px 16px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 8px;
+        background: #176ca5;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .thanhnav ul {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        margin-top: 10px;
+    }
+
+    .thanhnav ul.hienmenu {
+        display: flex;
+    }
+
+    .thanhnav li {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .thanhnav a {
+        padding: 10px;
+    }
+}
+
+/* =========================
+   3. PHAN DAU TRANG
+========================= */
+
+header {
+    max-width: 1100px;
+    margin: 28px auto;
+    padding: 45px 24px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 8px 28px rgba(49, 111, 145, 0.12);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dai mau chuyen sac tren khung */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(
+        90deg,
+        #168bff,
+        #54c5d9,
+        #ffe08a,
+        #168bff
+    );
+}
+
+header h1 {
+    margin: 8px 0;
+    color: #0877cf;
+    font-size: clamp(34px, 5vw, 48px);
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+header p {
+    margin: 8px auto;
+    max-width: 750px;
+}
+
+/* =========================
+   4. KHU VUC NOI DUNG
+========================= */
+
+main {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+main section {
+    position: relative;
+    overflow: hidden;
+    margin: 24px 0;
+    padding: 28px;
+    background: rgba(255, 255, 255, 0.76);
+    border: 1px solid rgba(255, 255, 255, 0.95);
+    border-radius: 18px;
+    box-shadow: 0 6px 22px rgba(45, 104, 137, 0.10);
+    backdrop-filter: blur(8px);
+}
+
+/* Dai chuyen mau phia tren moi khung */
+main section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(
+        90deg,
+        #168bff,
+        #58c7d7,
+        #ffe08a
+    );
+}
+
+main section h2 {
+    color: #0877cf;
+    font-size: clamp(26px, 3.5vw, 34px);
+    font-weight: 800;
+    line-height: 1.3;
+    margin: 0 0 16px;
+}
+
+main section h3 {
+    color: #246c91;
+    font-size: clamp(22px, 3vw, 28px);
+    font-weight: 800;
+    line-height: 1.3;
+    margin-top: 22px;
+}
+
+main section p,
+main section li {
+    overflow-wrap: anywhere;
+}
+
+main section a {
+    color: #0877cf;
+}
+
+main section a:hover {
+    color: #07569b;
+}
+
+/* =========================
+   5. ANH MINH HOA
+========================= */
+
+main section img {
+    display: block;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+main section figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+main section figcaption {
+    margin-top: 8px;
+    color: #587487;
+    font-size: 14px;
+}
+
+/* =========================
+   6. CHAN TRANG
+========================= */
+
+footer {
+    margin-top: 36px;
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #176ca5, #174d76);
+}
+
+footer h2 {
+    margin-top: 0;
+}
+
+footer p {
+    max-width: 700px;
+    margin: 8px auto;
+}
+
+/* =========================
+   7. RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+    .thanhnav {
+        padding: 8px 12px;
+    }
+
+    .thanhnav ul {
+        gap: 4px 12px;
+    }
+
+    .thanhnav a {
+        font-size: 13px;
+    }
+
+    header {
+        margin: 16px auto;
+        padding: 35px 18px;
+        border-radius: 15px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    main section {
+        margin: 16px 0;
+        padding: 23px 18px;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .thanhnav ul {
+        gap: 3px 9px;
+    }
+
+    .thanhnav a {
+        font-size: 12px;
+    }
+
+    main section {
+        padding: 20px 14px;
+    }
+}
+
+/* =========================
+   CAC MUC CO ANH BEN PHAI
+========================= */
+
+.muc-co-anh .noidungmuc {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(240px, 0.9fr);
+    align-items: center;
+    gap: 28px;
+}
+
+.muc-co-anh .vanbanmuc {
+    min-width: 0;
+}
+
+.muc-co-anh .anhmuc {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(40, 100, 140, 0.14);
+}
+
+.muc-co-anh h3 {
+    margin-top: 0;
+    color: #0877cf;
+}
+
+/* Tren dien thoai: anh xuong ben duoi */
+@media (max-width: 650px) {
+    .muc-co-anh .noidungmuc {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .muc-co-anh .anhmuc {
+        height: auto;
+        max-height: 260px;
+    }
+}
+
+
+/* KHUNG TRANG CONG CU */
+
+.trangcongcu {
+    width: min(1000px, 92%);
+    margin: 25px auto;
+}
+
+.khungcongcu {
+    margin: 24px 0;
+    padding: 26px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.95);
+    border-radius: 18px;
+    box-shadow: 0 6px 22px rgba(45, 104, 137, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.khungcongcu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(
+        90deg,
+        #168bff,
+        #58c7d7,
+        #ffe08a
+    );
+}
+
+.khungcongcu h2 {
+    color: #0877cf;
+    margin-top: 0;
+}
+
+/* CAC DONG SO LIEU */
+
+.dongtiendo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.dongtiendo strong {
+    color: #176ca5;
+    text-align: right;
+}
+
+/* THANH TIEN DO */
+
+.thanhnen {
+    width: 100%;
+    height: 14px;
+    background: #dcecf5;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.thanhmau {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #168bff, #58c7d7);
+    border-radius: inherit;
+    transition: width 0.6s ease;
+}
+
+#phantram-tien,
+#phantram-tnv {
+    text-align: right;
+    color: #176ca5;
+    font-weight: bold;
+    margin: 6px 0 16px;
+}
+
+@media (max-width: 600px) {
+    .trangcongcu {
+        width: 94%;
+    }
+
+    .khungcongcu {
+        padding: 22px 16px;
+    }
+
+    .dongtiendo {
+        align-items: flex-start;
+    }
+}
+
+/* ANH NEN TOAN BO WEBSITE */
+body {
+    background-image: url("https://cdn.upanhlaylink.com/i/R6KFreM2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* Nen cac khoi noi dung */
+.khunglienhe,
+.bong-congcu {
+    background-color: rgba(255, 255, 255, 0.92);
+}
+
+/* THANH MENU */
+.navbar-custom {
+    background: rgba(31, 91, 119, 0.96);
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Tên chiến dịch bên trái */
+.navbar-custom .navbar-brand {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Các liên kết menu */
+.navbar-custom .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 10px 14px;
+    transition: color 0.3s ease;
+}
+
+/* Hiệu ứng khi rê chuột */
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus {
+    color: #ffe08a;
+}
+
+/* Nút menu trên điện thoại */
+.navbar-custom .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-custom .navbar-toggler:focus {
+    box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.3);
+}
+
+/* Đổi màu biểu tượng ☰ sang trắng */
+.navbar-custom .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* Khoảng cách menu khi thu gọn */
+@media (max-width: 991.98px) {
+    .navbar-custom .navbar-nav {
+        padding-top: 10px;
+    }
+
+    .navbar-custom .nav-link {
+        padding: 10px 0;
+    }
+}
+
+/* TIEU DE DOI MAU LIEN TUC NHU WEB NHOM CU */
+header h1 {
+    animation: doiMauHeader1 7s infinite;
+}
+
+@keyframes doiMauHeader1 {
+    0% {
+        color: #0d6efd;
+    }
+
+    25% {
+        color: #198754;
+    }
+
+    50% {
+        color: #ffc107;
+    }
+
+    75% {
+        color: #dc3545;
+    }
+
+    100% {
+        color: #0d6efd;
+    }
+}
+
+/* Slogan co nen doi mau lien tuc */
+.slogan {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.slogan span {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    animation: doiNenSlogan 7s infinite;
+}
+
+.slogan {
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.slogan span {
+    display: inline-block;
+}
+
+@keyframes doiNenSlogan {
+    0% {
+        background-color: #0d6efd;
+    }
+    25% {
+        background-color: #198754;
+    }
+    50% {
+        background-color: #ffc107;
+    }
+    75% {
+        background-color: #dc3545;
+    }
+    100% {
+        background-color: #0d6efd;
+    }
+}
+
+.header-logo {
+    width: 200px; /* Bạn có thể đổi số này to hơn nếu muốn */
+    display: block;
+    margin: 8px auto 12px;
+  }
+  
+  .header-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  body {
+    padding-top: 76px;
+}
+
+.navbar-custom {
+    z-index: 1030;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-custom .navbar-collapse {
+        max-height: calc(100vh - 76px);
+        overflow-y: auto;
+    }
+}
