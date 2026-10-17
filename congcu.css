@@ -1,0 +1,214 @@
+
+/* ========================================
+   CONG CU GOI QUA AM - DONG BO GIAO DIEN
+======================================== */
+
+#congcuquyengop {
+  max-width: 1000px;
+  margin: 24px 0;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  box-shadow: 0 6px 22px rgba(45, 104, 137, 0.10);
+  backdrop-filter: blur(8px);
+}
+
+/* Tieu de cong cu */
+#congcuquyengop .tieude-congcu {
+  max-width: 750px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+#congcuquyengop .tieude-congcu > p:first-child {
+  color: #176ca5;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+#congcuquyengop .tieude-congcu h2 {
+  margin: 8px 0 14px;
+  color: #0877cf;
+  font-size: clamp(25px, 4vw, 34px);
+  line-height: 1.4;
+}
+
+#congcuquyengop .tieude-congcu p:last-child {
+  color: #587487;
+}
+
+/* Noi dung nhap tien */
+#congcuquyengop .noidung-tinhqua {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+#congcuquyengop .noidung-tinhqua > label {
+  display: block;
+  margin-bottom: 10px;
+  color: #24435a;
+  font-weight: bold;
+}
+
+#congcuquyengop #sotienquyengop {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 15px;
+  border: 1px solid #b8d5e5;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #24435a;
+  font: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#congcuquyengop #sotienquyengop:focus {
+  outline: none;
+  border-color: #168bff;
+  box-shadow: 0 0 0 3px rgba(22, 139, 255, 0.12);
+}
+
+/* Thanh truot */
+#congcuquyengop #thanhtien {
+  display: block;
+  width: 100%;
+  margin: 24px 0 10px;
+  accent-color: #168bff;
+  cursor: pointer;
+}
+
+#congcuquyengop .moc-tien {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: #587487;
+  font-size: 13px;
+}
+
+/* Cac nut bam */
+#congcuquyengop .cacnut-tien {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+#congcuquyengop .cacnut-tien button {
+  padding: 11px 17px;
+  border: 1px solid #176ca5;
+  border-radius: 9px;
+  background: #176ca5;
+  color: #fff;
+  font: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#congcuquyengop .cacnut-tien button:hover {
+  background: #0877cf;
+  border-color: #0877cf;
+  box-shadow: 0 4px 12px rgba(30, 100, 145, 0.15);
+  transform: translateY(-2px);
+}
+
+#congcuquyengop .cacnut-tien button:focus-visible {
+  outline: 3px solid #8ed9e5;
+  outline-offset: 3px;
+}
+
+#congcuquyengop .cacnut-tien #datlai {
+  background: #fffdf5;
+  color: #176ca5;
+  border-color: #c6dfe9;
+}
+
+#congcuquyengop .cacnut-tien #datlai:hover {
+  background: #eaf6f8;
+}
+
+/* Khung ket qua */
+#congcuquyengop .ketquaquyengop {
+  padding: 24px;
+  background: rgba(234, 246, 248, 0.88);
+  border: 1px solid rgba(84, 197, 217, 0.35);
+  border-left: 5px solid #58c7d7;
+  border-radius: 14px;
+}
+
+#congcuquyengop .ketquaquyengop h3 {
+  margin: 0 0 15px;
+  color: #0877cf;
+  font-size: 21px;
+}
+
+#congcuquyengop .ketquaquyengop p {
+  margin: 10px 0;
+  color: #24435a;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+#congcuquyengop #sogoiqua {
+  color: #0877cf;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+#congcuquyengop #chitietgoi {
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 9px;
+}
+
+#congcuquyengop #sotienconlai {
+  font-size: 14px;
+  color: #587487;
+}
+
+/* Ghi chu */
+#congcuquyengop .ghichu-quydoi {
+  margin-top: 18px;
+  color: #587487;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  #congcuquyengop {
+      padding: 23px 17px;
+  }
+
+  #congcuquyengop .cacnut-tien {
+      flex-direction: column;
+  }
+
+  #congcuquyengop .cacnut-tien button {
+      width: 100%;
+  }
+
+  #congcuquyengop .ketquaquyengop {
+      padding: 19px 15px;
+  }
+
+  #congcuquyengop #sogoiqua {
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  #congcuquyengop {
+      padding: 20px 13px;
+  }
+
+  #congcuquyengop .moc-tien {
+      font-size: 11px;
+  }
+}
