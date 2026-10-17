@@ -212,3 +212,38 @@
       font-size: 11px;
   }
 }
+
+
+/* Khung lớn bao quanh toàn bộ nội dung công cụ */
+.khungtongcongcu {
+  max-width: 1200px;
+  width: calc(100% - 40px);
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(53, 105, 83, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(31, 83, 65, 0.10);
+}
+
+/* Khoảng cách giữa các khung nhỏ */
+.khungtongcongcu .khungcongcu {
+  margin-bottom: 28px;
+}
+
+/* Bỏ khoảng trống thừa ở khung cuối */
+.khungtongcongcu .khungcongcu:last-child {
+  margin-bottom: 0;
+}
+
+/* Hiển thị tốt trên điện thoại */
+@media (max-width: 600px) {
+  .khungtongcongcu {
+      width: calc(100% - 24px);
+      margin: 24px auto;
+      padding: 16px;
+      border-radius: 16px;
+  }
+}
+
+

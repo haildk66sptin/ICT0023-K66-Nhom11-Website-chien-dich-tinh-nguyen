@@ -937,3 +937,180 @@
       grid-template-columns: 1fr;
   }
 }
+
+
+/* Icon trong modal thành viên */
+.chitiet-thanhvien p i {
+  display: inline-block;
+  width: 28px;
+  margin-right: 6px;
+  color: #2d775b;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.chitiet-thanhvien p {
+  line-height: 1.8;
+}
+
+/* Nút Facebook */
+.lienket-facebook i {
+  margin-right: 6px;
+  font-size: 1.1rem;
+}
+
+/* Icon trong modal thành viên */
+.chitiet-thanhvien p i {
+  display: inline-block;
+  width: 28px;
+  margin-right: 6px;
+  color: #2d775b;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.chitiet-thanhvien p {
+  line-height: 1.8;
+}
+
+/* Nút Facebook */
+.lienket-facebook i {
+  margin-right: 6px;
+  font-size: 1.1rem;
+}
+
+/* ===== HIỆU ỨNG VỆT SÁNG TRÊN ẢNH MODAL ===== */
+.anh-modal-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  isolation: isolate;
+}
+
+.anh-modal-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 55%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+
+  background: linear-gradient(
+      110deg,
+      transparent,
+      rgba(255, 255, 255, 0.65),
+      transparent
+  );
+
+  transform: skewX(-22deg);
+  animation: vetSangAnh 3.5s ease-in-out infinite;
+}
+
+.anh-modal {
+  display: block;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.anh-modal-box:hover .anh-modal {
+  transform: scale(1.04);
+}
+
+@keyframes vetSangAnh {
+  0%, 45% {
+      left: -120%;
+  }
+
+  100% {
+      left: 150%;
+  }
+}
+
+/* ===== HIỆU ỨNG NỔI TỪNG DÒNG THÔNG TIN ===== */
+.chitiet-thanhvien p {
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-left: 3px solid transparent;
+
+  transition:
+      transform 0.25s ease,
+      background-color 0.25s ease,
+      border-color 0.25s ease,
+      box-shadow 0.25s ease;
+}
+
+.chitiet-thanhvien p:hover {
+  transform: translateX(6px);
+  background-color: rgba(45, 119, 91, 0.09);
+  border-left-color: #2d775b;
+  box-shadow: 0 5px 14px rgba(35, 90, 65, 0.10);
+}
+
+.chitiet-thanhvien p strong {
+  transition: color 0.25s ease;
+}
+
+.chitiet-thanhvien p:hover strong {
+  color: #237653;
+}
+
+/* Hạn chế chuyển động nếu người dùng đã bật chế độ giảm chuyển động */
+@media (prefers-reduced-motion: reduce) {
+  .anh-modal-box::before {
+      animation: none;
+  }
+
+  .anh-modal,
+  .chitiet-thanhvien p,
+  .chitiet-thanhvien p strong {
+      transition: none;
+  }
+}
+
+/* Container danh sách thành viên */
+#danhsachthanhvien {
+  display: grid !important;
+  /* Bắt buộc chia đúng 4 cột bằng nhau trên màn hình máy tính */
+  grid-template-columns: repeat(4, 1fr) !important; 
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px; /* Bóp gọn khung chứa để 4 thẻ không bị quá to */
+  margin: 0 auto;    /* Căn giữa toàn bộ khung danh sách */
+}
+
+/* Kiểu dáng từng thẻ thành viên */
+#danhsachthanhvien > .thethanhvien {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important; /* Xóa bỏ min-width để thẻ tự thu nhỏ mịn màng khi phóng to màn hình */
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Trường hợp sau khi LỌC chỉ còn 1, 2 hoặc 3 người -> Căn giữa các thẻ đó */
+#danhsachthanhvien:has(> .thethanhvien:nth-last-child(-n+3):first-child) {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center !important;
+}
+
+#danhsachthanhvien:has(> .thethanhvien:nth-last-child(-n+3):first-child) > .thethanhvien {
+  flex: 0 0 260px; /* Khi filtered còn ít người, giữ thẻ có độ rộng cố định 260px và căn giữa */
+}
+
+/* Responsive: Tablet / Màn hình nhỏ (Dưới 992px) - Chuyển về 2 cột */
+@media (max-width: 992px) {
+  #danhsachthanhvien {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Responsive: Điện thoại (Dưới 576px) - Chuyển về 1 cột */
+@media (max-width: 576px) {
+  #danhsachthanhvien {
+    grid-template-columns: 1fr !important;
+  }
+}
