@@ -1,0 +1,332 @@
+
+/* =====================/
+   TỔNG QUAN LỊCH TRÌNH 
+=======================*/
+
+#tongquan {
+  padding: 55px 20px;
+  background: linear-gradient(135deg, #eaf6ff, #dcefff);
+  scroll-margin-top: 90px;
+}
+
+#tongquan .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 22px;
+}
+
+/* Tiêu đề */
+#tongquan h2 {
+  text-align: center;
+  color: #0879d9;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 0 0 40px;
+}
+
+#tongquan h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #1687e8;
+  border-radius: 5px;
+  margin: 12px auto 0;
+}
+
+/* Danh sách timeline */
+#tongquan .lichtrinh-list {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Đường nối dọc qua tâm các icon */
+#tongquan .lichtrinh-list::before {
+  content: "";
+  position: absolute;
+  left: 45px;
+  top: 45px;
+  bottom: 45px;
+  width: 3px;
+  background: #4ba8ed;
+  border-radius: 5px;
+}
+
+/* Thẻ từng giai đoạn */
+#tongquan .lichtrinh-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  margin: 0 0 22px;
+  padding: 22px 28px;
+
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(75, 168, 237, 0.12);
+  border-radius: 18px;
+
+  box-shadow: 0 5px 18px rgba(30, 117, 190, 0.08);
+
+  transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      background 0.3s ease;
+}
+
+#tongquan .lichtrinh-item:last-child {
+  margin-bottom: 0;
+}
+
+#tongquan .lichtrinh-item:hover {
+  transform: translateY(-4px);
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(30, 117, 190, 0.15);
+}
+
+/* Icon hình tròn */
+#tongquan .lichtrinh-icon {
+  position: relative;
+  z-index: 1;
+
+  flex: 0 0 76px;
+  width: 76px;
+  height: 76px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 4px solid #e0f1ff;
+  border-radius: 50%;
+
+  background: #1684e8;
+  color: #ffffff;
+  font-size: 27px;
+
+  box-shadow: 0 3px 10px rgba(22, 132, 232, 0.15);
+}
+
+/* Nội dung */
+#tongquan .lichtrinh-content {
+  flex: 1;
+  min-width: 0;
+}
+
+#tongquan .lichtrinh-content h3 {
+  margin: 0 0 10px;
+  color: #0879d9;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+#tongquan .lichtrinh-content p {
+  margin: 0;
+  color: #526779;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* Thời gian */
+#tongquan .lichtrinh-date {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: 12px;
+  color: #387ba9;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#tongquan .lichtrinh-date i {
+  color: #1684e8;
+}
+
+/* Nút xem chi tiết */
+#tongquan .lichtrinh-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-top: 13px;
+  padding: 8px 14px;
+
+  color: #0879d9;
+  background: #eaf6ff;
+  border-radius: 20px;
+
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+#tongquan .lichtrinh-link:hover {
+  color: #ffffff;
+  background: #1684e8;
+  transform: translateY(-2px);
+}
+
+/* =====================================
+ CHI TIẾT CÁC GIAI ĐOẠN
+===================================== */
+
+.chitiet-giaidoan,
+#loiket {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(30, 117, 190, 0.08);
+  scroll-margin-top: 90px;
+}
+
+.chitiet-giaidoan h2,
+#loiket h2 {
+  color: #0879d9;
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+.chitiet-giaidoan h3 {
+  color: #176b9f;
+}
+
+.chitiet-giaidoan p,
+.chitiet-giaidoan li,
+#loiket p {
+  color: #526779;
+  line-height: 1.8;
+}
+
+.chitiet-giaidoan li {
+  margin-bottom: 8px;
+}
+
+/* =====================================
+ RESPONSIVE - MÀN HÌNH ĐIỆN THOẠI
+===================================== */
+
+@media (max-width: 600px) {
+  #tongquan {
+      padding: 30px 12px;
+  }
+
+  #tongquan .container {
+      padding: 24px 12px;
+      border-radius: 15px;
+  }
+
+  #tongquan h2 {
+      font-size: 23px;
+      margin-bottom: 30px;
+  }
+
+  /* Đường nối chuyển theo icon bên trái */
+  #tongquan .lichtrinh-list::before {
+      left: 25px;
+      top: 35px;
+      bottom: 35px;
+  }
+
+  #tongquan .lichtrinh-item {
+      gap: 13px;
+      padding: 18px 12px;
+      margin-bottom: 18px;
+      border-radius: 13px;
+  }
+
+  #tongquan .lichtrinh-icon {
+      flex-basis: 50px;
+      width: 50px;
+      height: 50px;
+      border-width: 3px;
+      font-size: 19px;
+  }
+
+  #tongquan .lichtrinh-content h3 {
+      font-size: 16px;
+  }
+
+  #tongquan .lichtrinh-content p {
+      font-size: 14px;
+      line-height: 1.65;
+  }
+
+  #tongquan .lichtrinh-date {
+      font-size: 12px;
+      line-height: 1.6;
+  }
+
+  #tongquan .lichtrinh-link {
+      font-size: 12px;
+      padding: 7px 11px;
+  }
+
+  .chitiet-giaidoan,
+  #loiket {
+      margin: 20px 12px;
+      padding: 22px 16px;
+  }
+
+  .chitiet-giaidoan h2,
+  #loiket h2 {
+      font-size: 21px;
+  }
+}
+
+/* ===== HIỆU ỨNG TIMELINE GIỐNG BÀI CŨ ===== */
+
+/* Tiêu đề chuyển màu liên tục khi hover vào ô */
+.lichtrinh-item:hover .lichtrinh-content h3 {
+  animation: doiMauHoatDong 4s infinite;
+}
+
+@keyframes doiMauHoatDong {
+  0% {
+      color: #0d6efd;
+  }
+
+  25% {
+      color: #198754;
+  }
+
+  50% {
+      color: #ffc107;
+  }
+
+  75% {
+      color: #dc3545;
+  }
+
+  100% {
+      color: #0d6efd;
+  }
+}
+
+/* Ô timeline dịch sang phải và có bóng */
+.lichtrinh-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lichtrinh-item:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 25px rgba(13, 110, 253, 0.18);
+}
+
+/* Icon phóng to và nghiêng */
+.lichtrinh-icon {
+  transition: transform 0.3s ease;
+}
+
+.lichtrinh-item:hover .lichtrinh-icon {
+  transform: scale(1.15) rotate(8deg);
+}
