@@ -1,178 +1,371 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Lịch trình chiến dịch - Gửi Ấm Lên Non</title>
-</head>
-<body>
 
+    <!-- CSS giao diện -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="lichtrinh.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet">
+  </head>
+
+  <body>
+  
     <!-- MENU ĐIỀU HƯỚNG -->
-    <nav class="thanhnav" aria-label="Điều hướng chính">
-    <button
-        class="nutmenu"
-        id="nutmenu"
-        type="button"
-        aria-expanded="false"
-        aria-controls="menu-chinh"
-    >
-        ☰ Menu
-    </button>
-
-    <ul id="menu-chinh">
-        <li><a href="index.html" aria-current="page">Trang chủ</a></li>
-        <li><a href="huongdan.html">Hướng dẫn</a></li>
-        <li><a href="lichtrinh.html">Lịch trình</a></li>
-        <li><a href="congcu.html">Công cụ</a></li>
-        <li><a href="lienhe.html">Liên hệ</a></li>
-    </ul>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+      <div class="container-fluid px-4">
+      
+          <!-- Tên chiến dịch bên trái -->
+          <a class="navbar-brand" href="index.html">
+              Gửi Ấm Lên Non
+          </a>
+      
+          <!-- Nút menu trên điện thoại -->
+          <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#menu"
+              aria-controls="menu"
+              aria-expanded="false"
+              aria-label="Mở menu điều hướng">
+      
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Các mục menu bên phải -->
+          <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav ms-auto">
+      
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Trang chủ
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="noidung.html">
+                    Nội dung
+                    </a>
+                  </li>
+      
+                  <li class="nav-item">
+                      <a class="nav-link" href="huongdan.html">
+                          Hướng dẫn
+                      </a>
+                  </li>
+      
+                  <li class="nav-item">
+                      <a class="nav-link" href="lichtrinh.html">
+                          Lịch trình
+                      </a>
+                  </li>
+      
+                  <li class="nav-item">
+                      <a class="nav-link" href="congcu.html">
+                          Công cụ
+                      </a>
+                  </li>
+      
+                  <li class="nav-item">
+                      <a class="nav-link" href="lienhe.html">
+                          Liên hệ
+                      </a>
+                  </li>
+      
+              </ul>
+          </div>
+      
+      </div>
+      </nav>
 
     <!-- PHẦN TIÊU ĐỀ -->
     <header>
-        <p>CHIẾN DỊCH TÌNH NGUYỆN</p>
-        <h1>Lịch trình chiến dịch</h1>
-        <p>Gửi ấm lên non, gửi trọn yêu thương.</p>
-        <p>
-            Hành trình của chiến dịch được triển khai qua ba giai đoạn,
-            từ tiếp nhận quyên góp đến trao gửi yêu thương.
-        </p>
+      <p>CHIẾN DỊCH TÌNH NGUYỆN</p>
+      <div class="header-logo-container">
+      <img src="https://cdn.upanhlaylink.com/i/TbvLy67S.png" alt="Logo Chiến dịch Gửi Ấm Lên Non" class="header-logo">
+    </div>
+      <h1>LỊCH TRÌNH CHIẾN DỊCH</h1>
+
+      <p class="slogan">
+      <span>Gửi ấm lên non, gửi trọn yêu thương.</span>
+      </p>
+
+      <p>
+        Hành trình của chiến dịch được triển khai qua ba giai đoạn, từ tiếp nhận
+        quyên góp đến trao gửi yêu thương.
+      </p>
     </header>
 
     <!-- NỘI DUNG CHÍNH -->
     <main>
+      <!-- TỔNG QUAN LỊCH TRÌNH DẠNG TIMELINE -->
+      <section id="tongquan">
+        <div class="container">
+          <h2>TỔNG QUAN LỊCH TRÌNH</h2>
 
-        <!-- TỔNG QUAN LỊCH TRÌNH -->
-        <section id="tongquan">
-            <h2>Tổng quan lịch trình</h2>
+          <div class="lichtrinh-list">
+            <!-- GIAI ĐOẠN 1 -->
+            <div class="lichtrinh-item">
+              <div class="lichtrinh-icon" aria-hidden="true">
+                <i class="bi bi-heart-fill"></i>
+              </div>
 
-            <p>
-                Chiến dịch được chia làm ba giai đoạn chính:
-                tiếp nhận quyên góp và gây quỹ; chuẩn bị, phân loại
-                và đóng gói; tiến hành trao tặng và kết thúc.
-            </p>
+              <div class="lichtrinh-content">
+                <h3>Tiếp nhận quyên góp và gây quỹ</h3>
 
-            <ol>
-                <li>
-                    <a href="#giaidoan1">
-                        Giai đoạn 1: Tiếp nhận quyên góp và gây quỹ
-                    </a>
-                    <p>Thời gian: Từ DD/MM đến DD/MM.</p>
-                </li>
+                <p>
+                  Kêu gọi sự chung tay của cộng đồng, tiếp nhận quần áo ấm, sách
+                  vở và các khoản quyên góp cho các em nhỏ vùng cao.
+                </p>
 
-                <li>
-                    <a href="#giaidoan2">
-                        Giai đoạn 2: Chuẩn bị, phân loại và đóng gói
-                    </a>
-                    <p>Thời gian: Từ DD/MM đến DD/MM.</p>
-                </li>
+                <span class="lichtrinh-date">
+                  <i class="bi bi-calendar-event"></i>
+                  Từ 15/10/2026 đến 31/10/2026
+                </span>
 
-                <li>
-                    <a href="#giaidoan3">
-                        Giai đoạn 3: Tiến hành trao tặng và kết thúc
-                    </a>
-                    <p>Thời gian: Từ DD/MM đến DD/MM.</p>
-                </li>
-            </ol>
-        </section>
+                <a class="lichtrinh-link" href="#chitiet-giaidoan1">
+                  Xem chi tiết
+                  <i class="bi bi-arrow-down"></i>
+                </a>
+              </div>
+            </div>
 
-        <!-- GIAI ĐOẠN 1 -->
-        <section id="giaidoan1">
-            <h2>Giai đoạn 1: Tiếp nhận quyên góp và gây quỹ</h2>
+            <!-- GIAI ĐOẠN 2 -->
+            <div class="lichtrinh-item">
+              <div class="lichtrinh-icon" aria-hidden="true">
+                <i class="bi bi-box-seam-fill"></i>
+              </div>
 
-            <p><strong>Thời gian:</strong> Từ DD/MM đến DD/MM.</p>
+              <div class="lichtrinh-content">
+                <h3>Chuẩn bị, phân loại và đóng gói</h3>
 
-            <h3>Các hoạt động chính</h3>
-            <ul>
-                <li>
-                    Mở cổng đăng ký tình nguyện viên và điểm nhận
-                    đồ quyên góp tại Nhà D.
-                </li>
-                <li>
-                    Tổ chức các gian hàng gây quỹ nhỏ tại trường,
-                    bao gồm bán bánh, bán hoa và Acoustic gây quỹ.
-                </li>
-            </ul>
+                <p>
+                  Kiểm tra, phân loại quần áo và vật phẩm, thống kê số lượng,
+                  đóng gói quà tặng cẩn thận trước khi vận chuyển.
+                </p>
 
-            <h3>Chi tiết giai đoạn 1</h3>
-            <p>Để dành ghi sau.</p>
-        </section>
+                <span class="lichtrinh-date">
+                  <i class="bi bi-calendar-event"></i>
+                  Từ 1/11/2026 đến 5/11/2026
+                </span>
 
-        <!-- GIAI ĐOẠN 2 -->
-        <section id="giaidoan2">
-            <h2>Giai đoạn 2: Chuẩn bị, phân loại và đóng gói</h2>
+                <a class="lichtrinh-link" href="#chitiet-giaidoan2">
+                  Xem chi tiết
+                  <i class="bi bi-arrow-down"></i>
+                </a>
+              </div>
+            </div>
 
-            <p><strong>Thời gian:</strong> Từ DD/MM đến DD/MM.</p>
+            <!-- GIAI ĐOẠN 3 -->
+            <div class="lichtrinh-item">
+              <div class="lichtrinh-icon" aria-hidden="true">
+                <i class="bi bi-gift-fill"></i>
+              </div>
 
-            <h3>Các hoạt động chính</h3>
-            <ul>
-                <li>
-                    Tình nguyện viên giặt giũ, gấp gọn và phân loại
-                    quần áo theo lứa tuổi, kích cỡ.
-                </li>
-                <li>
-                    Đóng thùng carton và dán nhãn phân loại vật phẩm.
-                </li>
-                <li>
-                    Mua sắm quà mới như ủng và quà học tập
-                    từ quỹ tiền mặt.
-                </li>
-            </ul>
+              <div class="lichtrinh-content">
+                <h3>Trao tặng quà cho các em nhỏ</h3>
 
-            <h3>Chi tiết giai đoạn 2</h3>
-            <p>Để dành ghi sau.</p>
-        </section>
+                <p>
+                  Vận chuyển và trao tận tay những phần quà ấm áp đến các em học
+                  sinh tại những điểm trường vùng cao.
+                </p>
 
-        <!-- GIAI ĐOẠN 3 -->
-        <section id="giaidoan3">
-            <h2>Giai đoạn 3: Tiến hành trao tặng và kết thúc</h2>
+                <span class="lichtrinh-date">
+                  <i class="bi bi-calendar-event"></i>
+                  Từ 06/11/2026 đến 10/11/2026
+                </span>
 
-            <p><strong>Thời gian:</strong> Từ DD/MM đến DD/MM.</p>
+                <a class="lichtrinh-link" href="#chitiet-giaidoan3">
+                  Xem chi tiết
+                  <i class="bi bi-arrow-down"></i>
+                </a>
+              </div>
+            </div>
 
-            <h3>Các hoạt động chính</h3>
-            <ul>
-                <li>
-                    Đoàn tình nguyện di chuyển đến điểm trường đã khảo sát
-                    tại xã hoặc khu vực có hoàn cảnh khó khăn.
-                </li>
-                <li>
-                    Tổ chức chương trình văn nghệ, trò chơi và trao quà
-                    tận tay các em nhỏ.
-                </li>
-                <li>
-                    Tổng kết chiến dịch, kiểm toán thu chi
-                    và gửi thư cảm ơn.
-                </li>
-            </ul>
+            <!-- TỔNG KẾT -->
+            <div class="lichtrinh-item">
+              <div class="lichtrinh-icon" aria-hidden="true">
+                <i class="bi bi-check2-circle"></i>
+              </div>
 
-            <h3>Chi tiết giai đoạn 3</h3>
-            <p>Để dành ghi sau.</p>
-        </section>
+              <div class="lichtrinh-content">
+                <h3>Tổng kết và cảm ơn</h3>
 
-        <!-- LỜI KẾT -->
-        <section id="loiket">
-            <h2>Cùng nhau hoàn thành hành trình</h2>
+                <p>
+                  Tổng hợp kết quả chiến dịch, ghi nhận sự đóng góp và gửi lời
+                  cảm ơn đến các cá nhân, tổ chức đồng hành.
+                </p>
 
-            <p>
-                Mỗi giai đoạn đều cần sự chung tay của các tình nguyện viên
-                và những tấm lòng sẻ chia. Cảm ơn bạn đã đồng hành cùng
-                Gửi Ấm Lên Non trên hành trình mang hơi ấm đến học sinh
-                vùng cao Tây Bắc.
-            </p>
-        </section>
+                <span class="lichtrinh-date">
+                  <i class="bi bi-calendar-event"></i>
+                  Cuối chiến dịch
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- CHI TIẾT GIAI ĐOẠN 1 -->
+      <section id="chitiet-giaidoan1" class="chitiet-giaidoan">
+        <h2>Giai đoạn 1: Tiếp nhận quyên góp và gây quỹ</h2>
+
+        <p>
+          <strong>Thời gian:</strong>
+          Từ 10/09/2026 đến 30/09/2026.
+        </p>
+
+        <h3>Các hoạt động chính</h3>
+
+        <ul>
+          <li>
+            Mở cổng đăng ký tình nguyện viên và điểm nhận đồ quyên góp tại Nhà
+            D.
+          </li>
+
+          <li>
+            Tổ chức các gian hàng gây quỹ nhỏ tại trường, bao gồm bán bánh, bán
+            hoa và Acoustic gây quỹ.
+          </li>
+        </ul>
+
+        <h3>Chi tiết giai đoạn 1</h3>
+        <p><b>Khởi động chiến dịch</b>
+        <br>- Công bố thông tin, mục tiêu và kế hoạch triển khai chiến dịch Gửi Ấm Lên Non.
+        <br>- Mở form đăng ký tình nguyện viên và thông báo địa điểm tiếp nhận quyên góp tại Nhà D.
+        <br>- Đăng tải thông tin về các vật phẩm cần thiết như áo ấm, khăn, tất, sách vở và đồ dùng học tập.
+        
+        <br> <b>Tiếp nhận quyên góp và gây quỹ.</b>
+        <br>- Tiếp nhận quần áo ấm, sách vở và các vật phẩm phù hợp từ cộng đồng.
+        <br>- Tổ chức gian hàng bán bánh, bán hoa và chương trình Acoustic gây quỹ tại trường.
+        <br>- Truyền thông trên mạng xã hội để lan tỏa chiến dịch và kêu gọi thêm sự chung tay.
+        
+        <br> <b>Tổng hợp đợt quyên góp.</b>
+        <br>- Thống kê số lượng vật phẩm và tổng hợp các khoản tiền quyên góp.
+        <br> - Ghi nhận danh sách tình nguyện viên, cá nhân và tổ chức đồng hành.
+        <br>- Công bố kết quả tiếp nhận ban đầu và chuẩn bị cho giai đoạn phân loại, đóng gói..</p>
+      </section>
+
+      <!-- CHI TIẾT GIAI ĐOẠN 2 -->
+      <section id="chitiet-giaidoan2" class="chitiet-giaidoan">
+        <h2>Giai đoạn 2: Chuẩn bị, phân loại và đóng gói</h2>
+
+        <p>
+          <strong>Thời gian:</strong>
+          Từ 01/10/2026 đến 06/10/2026.
+        </p>
+
+        <h3>Các hoạt động chính</h3>
+
+        <ul>
+          <li>
+            Tình nguyện viên giặt giũ, gấp gọn và phân loại quần áo theo lứa
+            tuổi, kích cỡ.
+          </li>
+
+          <li>Đóng thùng carton và dán nhãn phân loại vật phẩm.</li>
+
+          <li>Mua sắm quà mới như ủng và quà học tập từ quỹ tiền mặt.</li>
+        </ul>
+
+        <h3>Chi tiết giai đoạn 2</h3>
+        <p>
+        <br> <b>Kiểm tra và phân loại.</b>
+        <br>- Kiểm tra tình trạng quần áo, sách vở và các vật phẩm được quyên góp.
+        <br>- Phân loại quần áo theo lứa tuổi, kích cỡ và công dụng.
+        <br>- Loại bỏ những vật phẩm không còn phù hợp để trao tặng.
+        
+        <br> <b>Chuẩn bị quà tặng.</b>
+        <br>- Giặt sạch, làm khô và gấp gọn quần áo trước khi đóng gói.
+        <br>- Thống kê số lượng vật phẩm theo từng nhóm.
+        <br>- Mua bổ sung ủng, đồ dùng học tập và các nhu yếu phẩm cần thiết từ nguồn quỹ của chiến dịch.
+        
+        <br> <b>Đóng gói và hoàn tất hậu cần.</b>
+        <br>- Đóng thùng carton, dán nhãn và ghi rõ loại vật phẩm bên ngoài mỗi thùng.
+        <br> - Kiểm tra danh sách quà tặng, số lượng và tình trạng đóng gói.
+        <br> - Sắp xếp phương tiện vận chuyển, phân công nhiệm vụ và rà soát kế hoạch trao quà.</p>
+      </section>
+
+      <!-- CHI TIẾT GIAI ĐOẠN 3 -->
+      <section id="chitiet-giaidoan3" class="chitiet-giaidoan">
+        <h2>Giai đoạn 3: Tiến hành trao tặng và kết thúc</h2>
+
+        <p>
+          <strong>Thời gian:</strong>
+          Từ 07/10/2026 đến 16/10/2026.
+        </p>
+
+        <h3>Các hoạt động chính</h3>
+
+        <ul>
+          <li>
+            Đoàn tình nguyện di chuyển đến điểm trường đã khảo sát tại xã hoặc
+            khu vực có hoàn cảnh khó khăn.
+          </li>
+
+          <li>
+            Tổ chức chương trình văn nghệ, trò chơi và trao quà tận tay các em
+            nhỏ.
+          </li>
+
+          <li>Tổng kết chiến dịch, kiểm tra thu chi và gửi thư cảm ơn.</li>
+        </ul>
+
+        <h3>Chi tiết giai đoạn 3</h3>
+        <p>
+        <br> <b>Chuẩn bị chuyến đi.</b>
+        <br> - Xác nhận với điểm trường tiếp nhận về số lượng học sinh và nhu cầu hỗ trợ.
+        <br> - Hoàn thiện danh sách quà tặng, nhân sự tham gia và phương án vận chuyển.
+        <br>- Kiểm tra lại toàn bộ vật phẩm trước khi khởi hành.
+        
+        <br> <b>Trao gửi yêu thương.</b>
+        <br> - Vận chuyển quà tặng đến điểm trường đã được khảo sát và thống nhất.
+        <br> - Tổ chức giao lưu, trò chơi tập thể và các hoạt động phù hợp với học sinh.
+        <br>- Trao tặng áo ấm, sách vở, đồ dùng học tập và các phần quà thiết yếu.
+        <br>- Ghi nhận kết quả trao tặng, lưu giữ hình ảnh hoạt động khi được nhà trường và người liên quan đồng ý.
+        
+        <br>
+        <b>Tổng kết chiến dịch.</b>
+        <br>- Tổng hợp số lượng quà đã trao, số người tham gia và kết quả gây quỹ.
+        <br>- Đối chiếu các khoản thu, chi và công khai báo cáo tài chính phù hợp.
+        <br> - Gửi lời cảm ơn đến tình nguyện viên, nhà tài trợ và các cá nhân, tổ chức đồng hành.
+        <br>- Đánh giá kết quả, rút kinh nghiệm và hoàn thiện báo cáo tổng kết.</p>
+      </section>
+
+      <!-- LỜI KẾT -->
+      <section id="loiket">
+        <h2>Cùng nhau hoàn thành hành trình</h2>
+
+        <p>
+          Mỗi giai đoạn đều cần sự chung tay của các tình nguyện viên và những
+          tấm lòng sẻ chia. Cảm ơn bạn đã đồng hành cùng Gửi Ấm Lên Non trên
+          hành trình mang hơi ấm đến học sinh vùng cao Tây Bắc.
+        </p>
+      </section>
     </main>
 
     <!-- CHÂN TRANG -->
-    <footer>
+    <footer class="chantrang">
+      <div class="noidungchantrang">
         <h2>Gửi Ấm Lên Non</h2>
-        <p>Gửi ấm lên non, gửi trọn yêu thương.</p>
-        <p>
-            Chung tay sẻ chia áo ấm và đồ dùng học tập,
-            tiếp sức đến trường cho học sinh vùng cao Tây Bắc.
-        </p>
-        <p>&copy; 2026 Gửi Ấm Lên Non - Dự án học tập của Nhóm 11.</p>
+        <p class="slogan">Gửi ấm lên non, gửi trọn yêu thương.</p>
+      </div>
+
+      <div class="banquyen">
+        <p>© 2026 Gửi Ấm Lên Non · Dự án học tập của Nhóm 11</p>
+      </div>
     </footer>
 
-</body>
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
