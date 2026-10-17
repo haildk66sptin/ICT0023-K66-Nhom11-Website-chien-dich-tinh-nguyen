@@ -1,1 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công cụ và minh bạch - Gửi Ấm Lên Non</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="congcu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet">
+</head>
+<body>
 
+    <!-- MENU ĐIỀU HƯỚNG -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container-fluid px-4">
+        
+            <!-- Tên chiến dịch bên trái -->
+            <a class="navbar-brand" href="index.html">
+                Gửi Ấm Lên Non
+            </a>
+        
+            <!-- Nút menu trên điện thoại -->
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Mở menu điều hướng">
+        
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Các mục menu bên phải -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Trang chủ
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="noidung.html">
+                        Nội dung
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="huongdan.html">
+                            Hướng dẫn
+                        </a>
+                    </li>
+        
+                    <li class="nav-item">
+                        <a class="nav-link" href="lichtrinh.html">
+                            Lịch trình
+                        </a>
+                    </li>
+        
+                    <li class="nav-item">
+                        <a class="nav-link" href="congcu.html">
+                            Công cụ
+                        </a>
+                    </li>
+        
+                    <li class="nav-item">
+                        <a class="nav-link" href="lienhe.html">
+                            Liên hệ
+                        </a>
+                    </li>
+        
+                </ul>
+            </div>
+        
+        </div>
+    </nav>
+    <!-- PHẦN TIÊU ĐỀ -->
+    <header>
+        <p>CHIẾN DỊCH TÌNH NGUYỆN</p>
+        <div class="header-logo-container">
+        <img src="https://cdn.upanhlaylink.com/i/TbvLy67S.png" alt="Logo Chiến dịch Gửi Ấm Lên Non" class="header-logo">
+      </div>
+        <h1>TIẾN ĐỘ VÀ CÔNG CỤ</h1>
+        <p class="slogan">
+        <span>Gửi ấm lên non, gửi trọn yêu thương.</span>
+        </p>
+        <p>
+            Theo dõi tiến độ quyên góp vật phẩm, gây quỹ
+            và sự tham gia của các tình nguyện viên.
+        </p>
+    </header>
+
+    <!-- NỘI DUNG CHÍNH -->
+<main class="trangcongcu">
+
+    <!-- THOI GIAN CON LAI -->
+    <section class="khungcongcu" id="thoigian">
+        <h2>Thời gian còn lại</h2>
+
+        <p id="songayconlai">
+            Đang cập nhật...
+        </p>
+    </section>
+
+    <!-- TIEN DO VAT PHAM -->
+    <section class="khungcongcu" id="vatchat">
+        <h2>1. Tiến độ quyên góp vật phẩm</h2>
+
+        <p>
+            Theo dõi số lượng vật phẩm đã tiếp nhận
+            so với mục tiêu của chiến dịch.
+        </p>
+
+        <div id="danhsachvatpham">
+            <!-- JavaScript se tu tao cac thanh tien do tai day -->
+        </div>
+    </section>
+
+    <!-- TIEN DO TIEN MAT -->
+    <section class="khungcongcu" id="tienmat">
+        <h2>2. Tiến độ quyên góp tiền mặt</h2>
+
+        <div id="thongtintienmat">
+            <!-- JavaScript se hien thi so tien tai day -->
+        </div>
+
+        <div class="thongtintiendo">
+            <div class="dongtiendo">
+                <span>Số tiền đã đóng góp</span>
+                <strong id="sotien">Đang cập nhật...</strong>
+            </div>
+
+            <div class="thanhnen" role="progressbar"
+                 aria-label="Tiến độ gây quỹ"
+                 aria-valuemin="0"
+                 aria-valuemax="100"
+                 aria-valuenow="0"
+                 id="thanhnen-tien">
+                <div class="thanhmau" id="thanhmau-tien"></div>
+            </div>
+
+            <p id="phantram-tien">0%</p>
+
+            <div class="dongtiendo">
+                <span>Mục tiêu gây quỹ</span>
+                <strong id="muctieu-tien">50.000.000 đ</strong>
+            </div>
+
+            <div class="dongtiendo">
+                <span>Số lượt ủng hộ</span>
+                <strong id="soluotungho">Đang cập nhật...</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIEN DO TINH NGUYEN VIEN -->
+    <section class="khungcongcu" id="tinhnguyenvien">
+        <h2>3. Số tình nguyện viên đã tham gia</h2>
+
+        <div class="dongtiendo">
+            <span>Số tình nguyện viên</span>
+            <strong id="sotinhnguyenvien">Đang cập nhật...</strong>
+        </div>
+
+        <div class="thanhnen" role="progressbar"
+             aria-label="Tiến độ tình nguyện viên"
+             aria-valuemin="0"
+             aria-valuemax="100"
+             aria-valuenow="0"
+             id="thanhnen-tnv">
+            <div class="thanhmau" id="thanhmau-tnv"></div>
+        </div>
+
+        <p id="phantram-tnv">0%</p>
+    </section>
+
+    <section id="congcuquyengop" class="khungcongcu">
+        <div class="tieude-congcu">
+            <p>CÔNG CỤ HỖ TRỢ QUYÊN GÓP</p>
+            <h2>Quy đổi số lượng phần quà</h2>
+            <p>
+                Mỗi sự sẻ chia đều góp phần mang hơi ấm
+                đến với học sinh vùng cao.
+            </p>
+        </div>
+
+        <div class="noidung-tinhqua">
+            <label for="sotienquyengop">
+                Số tiền muốn quy đổi (VNĐ)
+            </label>
+
+            <input
+                type="number"
+                id="sotienquyengop"
+                min="0"
+                max="2000000"
+                step="50000"
+                value="200000"
+            >
+
+            <input
+                type="range"
+                id="thanhtien"
+                min="0"
+                max="2000000"
+                step="50000"
+                value="200000"
+                aria-label="Thanh trượt chọn số tiền"
+            >
+
+            <div class="moc-tien">
+                <span>0đ</span>
+                <span>1.000.000đ</span>
+                <span>2.000.000đ</span>
+            </div>
+
+            <div class="cacnut-tien">
+                <button type="button" id="dungthu200">
+                    Dùng thử 200.000đ
+                </button>
+
+                <button type="button" id="dungthu1000">
+                    Dùng thử 1.000.000đ
+                </button>
+
+                <button type="button" id="datlai">
+                    Đặt lại
+                </button>
+            </div>
+
+            <div id="ketquaquyengop" class="ketquaquyengop"
+                 aria-live="polite">
+                <h3>Giá trị quy đổi dự kiến</h3>
+
+                <p id="sogoiqua"></p>
+                <p id="chitietgoi"></p>
+                <p id="sotienconlai"></p>
+            </div>
+
+            <p class="ghichu-quydoi">
+                Lưu ý: Đơn giá chỉ mang tính minh họa.
+                Giá trị thực tế phụ thuộc vào đơn giá vật phẩm
+                được Ban Tổ chức xác nhận.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+    <!-- CHÂN TRANG -->
+    <footer class="chantrang">
+    <div class="noidungchantrang">
+        <h2>Gửi Ấm Lên Non</h2>
+        <p class="slogan">Gửi ấm lên non, gửi trọn yêu thương.</p>
+    </div>
+  
+    <div class="banquyen">
+        <p>© 2026 Gửi Ấm Lên Non · Dự án học tập của Nhóm 11</p>
+    </div>
+  </footer>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
