@@ -2,7 +2,7 @@
 
 const duLieuCongCu = {
     // Ngay ket thuc chien dich
-    ngayKetThuc: "2026-10-30",
+    ngayKetThuc: "2026-11-10",
 
     // Tien do quyen gop vat pham
     vatPham: [
@@ -97,7 +97,7 @@ const danhsachthanhvien = [
     {
         stt: 4,
         hvt: "Bùi Hoàng Hiệp",
-        ns: "31/11/2007",
+        ns: "30/11/2007",
         que: "Sơn La",
         st: "Thể thao, chơi game, chơi bi-a",
         vt: "Reporter",
