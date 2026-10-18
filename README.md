@@ -35,47 +35,26 @@ Sinh viên, học sinh và những người quan tâm đến hoạt động tìn
 
 ## 6. Thành viên và phân công
 
-### 6.1. Lò Đức Hải
+### 1. Lò Đức Hải (haildk66sptin)
+Trưởng nhóm, Coder	
+Tạo repository Public, thêm thành viên, phân công nhiệm vụ, xây dựng quy trình làm việc trên GitHub; làm Trang chủ (giới thiệu chiến dịch, mục tiêu, slogan, nút kêu gọi), trang Công cụ, hiệu ứng JavaScript và hậu kỳ	
+index.html, trangchu.css, congcu.html, congcu.css, data.js, script.js.
 
-- **Tài khoản:** haild.k66sptin@utb.edu.vn
-- **Vai trò:** Trưởng nhóm, Coder.
-- **Nhiệm vụ:**
-  - Chia nhiệm vụ cho các thành viên trong nhóm.
-  - Tạo repository Public, thêm các thành viên và đặt tên dự án là "Gửi Ấm Lên Non".
-  - Viết README.md.
-  - Phát triển phần **Trang chủ**, giới thiệu chiến dịch, hoàn cảnh, mục tiêu, slogan và nút kêu gọi hành động.
-  - Thiết kế ảnh lớn, làm nổi bật mục tiêu và tạo các liên kết dẫn đến những trang khác.
+### 2.Nguyễn Khánh Linh (kanalichengming-cpu)
+Navigator
+Làm trang Liên hệ, logo; chỉnh sửa nội dung, hình ảnh, lỗi chính tả; lập và quản lý fanpage, kênh YouTube của dự án; 
+hỗ trợ soạn README.md và CONTRIBUTIONS.md	lienhe.html, lienhe.css
 
-### 6.2. Nguyễn Khánh Linh
+### 3. Bùi Hoàng Hiệp
+(hiepbhk66sptin-droid)	
+Reporter	
+Làm trang Hướng dẫn quyên góp (cách quyên góp hiện vật, đóng gói, thời gian, địa điểm, các bước và lưu ý) và phần bài viết liên quan	
+huongdan.html, huongdan.css
 
-- **Tài khoản:** linhnk.k66sptin@utb.edu.vn
-- **Vai trò:** Navigator.
-- **Nhiệm vụ:**
-  - Phát triển phần **Liên hệ**.
-  - Viết README.md và CONTRIBUTIONS.md.
-  - Tạo lập và quản lý các trang Facebook, YouTube của dự án.
-
-### 6.3. Bùi Hoàng Hiệp
-
-- **Tài khoản:** hiepbh.k66sptin@utb.edu.vn
-- **Vai trò:** Reporter.
-- **Nhiệm vụ:**
-  - Phát triển phần **Hướng dẫn quyên góp**.
-  - Trình bày cách quyên góp hiện vật, đóng gói, thời gian và địa điểm tiếp nhận.
-  - Xây dựng danh sách hiện vật được nhận và không được nhận.
-  - Trình bày các bước hướng dẫn và những lưu ý cần thiết.
-  - Sử dụng HTML, CSS và Bootstrap Card/Alert.
-
-### 6.4. Tao Văn Đạt
-
-- **Tài khoản:** dattv.k66sptin@utb.edu.vn
-- **Vai trò:** Tester.
-- **Nhiệm vụ:**
-  - Phát triển phần **Lịch trình chiến dịch**.
-  - Trình bày ba giai đoạn: tiếp nhận, phân loại – đóng gói, trao tặng – tổng kết.
-  - Thể hiện mốc thời gian, nhiệm vụ và người phụ trách.
-  - Sử dụng Timeline hoặc Bootstrap Cards để trình bày lịch trình.
-  - Ghi rõ ngày tháng là dự kiến nếu chưa có lịch chính thức.
+### 4. Tao Văn Đạt (dattvk66sptin)
+Tester
+Làm trang Lịch trình (ba giai đoạn, mốc thời gian, nhiệm vụ), thêm ảnh và chỉnh sửa nội dung lịch trình
+lichtrinh.html, lichtrinh.css
 
 ## 7. Tiến độ
 Dự án được phát triển theo các giai đoạn: lên ý tưởng, xây dựng HTML, thiết kế giao diện, phát triển tương tác và kiểm thử hoàn thiện.
