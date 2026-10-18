@@ -28,7 +28,7 @@ Sinh viên, học sinh và những người quan tâm đến hoạt động tìn
 
 ## 5. Các trang dự kiến
 - `index.html`: Trang chủ.
-- `hoatdong.html`: Các hoạt động.
+- `noidung.html`: Các hoạt động.
 - `lichtrinh.html`: Lịch trình.
 - `congcu.html`: Công cụ tính quà.
 - `huongdan.html`: Hướng dẫn và câu hỏi thường gặp.
