@@ -1,11 +1,9 @@
-/* ========================================TRANG LIEN HE======================================== */
 
 .tranglienhe {
   width: min(1050px, 92%);
   margin: 30px auto 45px;
 }
 
-/* Khung noi dung chung */
 
 .khunglienhe {
   position: relative;
@@ -18,7 +16,6 @@
   box-shadow: 0 6px 22px rgba(45, 104, 137, 0.10);
 }
 
-/* Dai mau chuyen sac tren dau moi khung */
 
 .khunglienhe::before {
   content: "";
@@ -47,9 +44,6 @@
 }
 
 
-/* ========================================
- 1. THONG TIN LIEN HE
-======================================== */
 
 .danhsachlienhe {
   display: grid;
@@ -112,15 +106,10 @@
 }
 
 
-/* ========================================
- 2. FORM DANG KY
-======================================== */
-
 #formtnv {
   margin-top: 25px;
 }
 
-/* Moi phan cua form la mot khung rieng */
 
 .phanform {
   min-width: 0;
@@ -137,8 +126,6 @@
   font-size: 18px;
   font-weight: 700;
 }
-
-/* Luoi cac o nhap lieu */
 
 .luoiform {
   display: grid;
@@ -168,7 +155,6 @@
   font-weight: 600;
 }
 
-/* O nhap lieu */
 
 .truongform input,
 .truongform select,
@@ -223,8 +209,6 @@
   line-height: 1.7;
 }
 
-
-/* Cac lua chon checkbox */
 
 .nhomluachon {
   display: flex;
@@ -283,7 +267,6 @@
 }
 
 
-/* Nut gui form */
 
 .luuyform {
   margin: 10px 0 18px;
