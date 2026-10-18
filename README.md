@@ -45,8 +45,7 @@ Navigator
 Làm trang Liên hệ, logo; chỉnh sửa nội dung, hình ảnh, lỗi chính tả; lập và quản lý fanpage, kênh YouTube của dự án; 
 hỗ trợ soạn README.md và CONTRIBUTIONS.md	lienhe.html, lienhe.css
 
-### 3. Bùi Hoàng Hiệp
-(hiepbhk66sptin-droid)	
+### 3. Bùi Hoàng Hiệp (hiepbhk66sptin-droid)	
 Reporter	
 Làm trang Hướng dẫn quyên góp (cách quyên góp hiện vật, đóng gói, thời gian, địa điểm, các bước và lưu ý) và phần bài viết liên quan	
 huongdan.html, huongdan.css
