@@ -24,3 +24,23 @@
 ### Tao Văn Đạt — Tester
 - Làm trang lịch trình.
 - Thêm ảnh và chỉnh sửa nội dung lịch trình.
+TỔNG HỢP
+### 1. Lò Đức Hải (haildk66sptin)
+Trưởng nhóm, Coder	
+Tạo repository Public, thêm thành viên, phân công nhiệm vụ, xây dựng quy trình làm việc trên GitHub; làm Trang chủ (giới thiệu chiến dịch, mục tiêu, slogan, nút kêu gọi), trang Công cụ, hiệu ứng JavaScript và hậu kỳ	
+index.html, trangchu.css, congcu.html, congcu.css, data.js, script.js.
+
+### 2.Nguyễn Khánh Linh (kanalichengming-cpu)
+Navigator
+Làm trang Liên hệ, logo; chỉnh sửa nội dung, hình ảnh, lỗi chính tả; lập và quản lý fanpage, kênh YouTube của dự án; 
+hỗ trợ soạn README.md và CONTRIBUTIONS.md	lienhe.html, lienhe.css
+
+### 3. Bùi Hoàng Hiệp (hiepbhk66sptin-droid)	
+Reporter	
+Làm trang Hướng dẫn quyên góp (cách quyên góp hiện vật, đóng gói, thời gian, địa điểm, các bước và lưu ý) và phần bài viết liên quan	
+huongdan.html, huongdan.css
+
+### 4. Tao Văn Đạt (dattvk66sptin)
+Tester
+Làm trang Lịch trình (ba giai đoạn, mốc thời gian, nhiệm vụ), thêm ảnh và chỉnh sửa nội dung lịch trình
+lichtrinh.html, lichtrinh.css
