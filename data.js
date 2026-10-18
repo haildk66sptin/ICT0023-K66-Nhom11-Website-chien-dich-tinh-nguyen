@@ -91,14 +91,12 @@ const duLieuCongCu = {
         soLuotUngHo: 217
     },
 
-    // Tien do tuyen tinh nguyen vien
     tinhNguyenVien: {
         daThamGia: 56,
         mucTieu: 100
     }
 };
 
-// ===== DỮ LIỆU THÀNH VIÊN NHÓM =====
 const danhsachthanhvien = [
     {
         stt: 1,
@@ -121,7 +119,7 @@ const danhsachthanhvien = [
         vt: "Navigator",
         nv: 4,
         anh: "https://cdn.upanhlaylink.com/i/WP29xh3O.png",
-        fb: "https://www.facebook.com/share/19YD4XxpmF/?mibextid=wwXIfr",
+        fb: "https://www.facebook.com/share/19XXrSXw8A/",
         role: "navigator"
     },
     {
@@ -133,7 +131,7 @@ const danhsachthanhvien = [
         vt: "Tester",
         nv: 4,
         anh: "https://cdn.upanhlaylink.com/i/q4HNMX2q.png",
-        fb: "https://www.facebook.com/share/19YD4XxpmF/?mibextid=wwXIfr",
+        fb: "https://www.facebook.com/share/1DWsKhRd1o/?mibextid=wwXIfr",
         role: "tester"
     },
     {
@@ -145,7 +143,7 @@ const danhsachthanhvien = [
         vt: "Reporter",
         nv: 4,
         anh: "https://cdn.upanhlaylink.com/i/xA4e78Up.png",
-        fb: "https://www.facebook.com/share/19YD4XxpmF/?mibextid=wwXIfr",
+        fb: "https://www.facebook.com/share/1HtRGqeHop/?mibextid=wwXIfr",
         role: "reporter"
     }
 ];
