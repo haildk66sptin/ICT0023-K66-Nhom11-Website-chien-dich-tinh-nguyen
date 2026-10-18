@@ -7,6 +7,7 @@ Website chiến dịch tình nguyện Gửi Ấm Lên Non
 Gửi Ấm Lên Non là website giới thiệu chiến dịch tình nguyện hướng đến học sinh tại các khu vực miền núi Sơn La. Dự án truyền tải thông tin về việc quyên góp quần áo còn sử dụng tốt, đồ dùng học tập và chuẩn bị các phần quà hỗ trợ.
 
 Các hoạt động và lịch trình trên website là thông tin dự kiến phục vụ bài tập, không đại diện cho một chiến dịch đã được tổ chức thực tế.
+WEBSITE: https://haildk66sptin.github.io/ICT0023-K66-Nhom11-Website-chien-dich-tinh-nguyen/
 
 ## 2. Mục tiêu
 - Giới thiệu ý nghĩa và mục tiêu của chiến dịch.
