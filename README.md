@@ -6,9 +6,18 @@ Website chiến dịch tình nguyện Gửi Ấm Lên Non
 ## 1. Giới thiệu dự án
 Gửi Ấm Lên Non là website giới thiệu chiến dịch tình nguyện hướng đến học sinh tại các khu vực miền núi Sơn La. Dự án truyền tải thông tin về việc quyên góp quần áo còn sử dụng tốt, đồ dùng học tập và chuẩn bị các phần quà hỗ trợ.
 
-Các hoạt động và lịch trình trên website là thông tin dự kiến phục vụ bài tập, không đại diện cho một chiến dịch đã được tổ chức thực tế.
-WEBSITE: https://haildk66sptin.github.io/ICT0023-K66-Nhom11-Website-chien-dich-tinh-nguyen/
+- Các hoạt động và lịch trình trên website là thông tin dự kiến phục vụ bài tập, không đại diện cho một chiến dịch đã được tổ chức thực tế.
 
+- Sản phẩm cần nộp:
+- Báo cáo docx, PDF: [https://drive.google.com/drive/folders/1rXquvb5SrGL9msclrxiHEUmrxmhxfghW?usp=drive_link](https://drive.google.com/drive/folders/1rXquvb5SrGL9msclrxiHEUmrxmhxfghW?usp=drive_link)
+- Phiếu đánh giá: [https://drive.google.com/drive/folders/1aK1z59kTb_JvlKCjdI66etHIty3lxbQH?usp=sharing](https://drive.google.com/drive/folders/1aK1z59kTb_JvlKCjdI66etHIty3lxbQH?usp=sharing)
+- PPTX: https: [https://docs.google.com/presentation/d/1XRVeEYBIuipsFLEhH-qoEFVkX23Z4oLh/edit?usp=sharing&ouid=105762948790882526802&rtpof=true&sd=true](https://docs.google.com/presentation/d/1XRVeEYBIuipsFLEhH-qoEFVkX23Z4oLh/edit?usp=sharing&ouid=105762948790882526802&rtpof=true&sd=true)
+- Mã nguồn: [https://drive.google.com/drive/folders/1VZvgVJJ_lxzSz2MTM3t1C_JHOqw_a8z_?usp=drive_link](https://drive.google.com/drive/folders/1VZvgVJJ_lxzSz2MTM3t1C_JHOqw_a8z_?usp=drive_link)
+
+- Github Repository: [https://github.com/haildk66sptin/ICT0023-K66-Nhom11-Website-chien-dich-tinh-nguyen](https://github.com/haildk66sptin/ICT0023-K66-Nhom11-Website-chien-dich-tinh-nguyen)
+- Github Pages: [https://haildk66sptin.github.io/ICT0023-K66-Nhom11-Website-chien-dich-tinh-nguyen/](https://haildk66sptin.github.io/ICT0023-K66-Nhom11-Website-chien-dich-tinh-nguyen/)
+- Thư mục dự án: [https://drive.google.com/drive/folders/18hrs_7XtN8SJib3grw3Prpe2bmm_g7Q8?usp=drive_link](https://drive.google.com/drive/folders/18hrs_7XtN8SJib3grw3Prpe2bmm_g7Q8?usp=drive_link)
+- YouTube Video: [https://youtu.be/sy-wi5nMVCQ?si=X82x0gkvMO7La8Nb](https://youtu.be/sy-wi5nMVCQ?si=X82x0gkvMO7La8Nb)
 ## 2. Mục tiêu
 - Giới thiệu ý nghĩa và mục tiêu của chiến dịch.
 - Cung cấp thông tin về hoạt động và lịch trình dự kiến.
